@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="tiendaDeFruta">
+<head>
+	<title>proyecto web</title>
+	
+	<script src="controllerCanvas.js"></script>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="controllers.js"></script>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="stylesheet" href="style.css" />
+	<script src="progress.js"></script>
+
+</head>
+<body>
+
+<header >
+	<div class="logo"><img src="AngularJS-small.png"></div>
+	<nav>
+		<a href="main.html">Ejemplo 1</a>
+		<a href="pagina2.html">Ejemplo 2</a>
+		<a href="">Ejemplo 3</a>
+	</nav>
+</header>
+
+<div class="center">
+	 
+		
+		<div class="progress">
+			<progress id="html5" max="100" value="91"></progress>
+			<span>Errores</span>
+		</div>
+		<div class="progress">
+			<progress id="puntaje" max="100" value="90"></progress>
+			<span>Puntaje</span>
+		</div>
+		
+</div>
+
+<div class="hoja">
+	<canvas id="canvas2D" width="800" height="400">Navegador no soportado</canvas>
+	
+</div>
+
+<script type="text/javascript"> 
+
+	window.onload = function() { 
+		
+		animateprogress("#html5",0);
+		animateprogress("#puntaje",0);
+		main();
+	} 	
+	document.querySelector ('#boton').addEventListener ('click', function() { 
+		animateprogress("#html5",0);
+	
+	});
+
+
+</script>
+
+
+
+</body>
+</html>
